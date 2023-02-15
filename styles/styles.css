@@ -80,6 +80,61 @@ a:active {
     background-color: #303134;
 }
 
+/*********MILKA MENU*********/
+
+.milka {
+    border-radius: 10px;
+    box-shadow: -1px -1px 5px rgba(0, 0, 0,0.5);
+    position: absolute;
+    top: 48px;
+    right: 10px;
+    padding: 12px;
+    width: 328px;
+    height: 400px;
+    background-color: #333438;
+    display: none;
+}
+
+
+
+.milka.active {
+    display: block;
+}
+
+.avatar-grid {
+    border-radius: 50%;
+    width: 24px;
+    display: inline-block;
+    /* height: 64px;
+    vertical-align: top;
+    width: 64px; */
+}
+
+.google-grid {
+    width: 24px;
+}
+
+.grid-item {
+    display: inline-block;
+    height: 60px;
+    list-style-type: none;
+    padding: 6px;
+    position: relative;
+    transition: transform .2s cubic-bezier(.333,0,0,1);
+    vertical-align: top;
+    width: 60px;
+}
+
+.grid-item:hover {
+    background-color: rgba(0, 0, 0, 0.225);
+}
+
+.grid-menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 /**************************************LOGO*************************************/
 .mainSectionContainer {
     height: 50vh;
@@ -90,18 +145,19 @@ a:active {
 }
 
 .google {
-    max-height: 110%;
-    max-width: 110%;
+    max-height: 100%;
+    max-width: 100%;
     object-fit: contain;
     object-position: center bottom;
     width: auto;
-    margin-bottom: 20px;
+    margin-bottom: 90px;
 }
 
 /**************************************INPUT************************************/
 
 form {
     text-align: center;
+    margin-top: -30px;
 }
 
 .input-holder {
@@ -119,9 +175,11 @@ form {
     margin: 20px 0;
     padding: 10px;
     position: relative;
+    margin-top: -36px;
 }
 
 .historial {
+    border-top: 1px solid #3c4043;
     position: absolute;
     top: 26px;
     background-color: #2f3135;
@@ -140,18 +198,25 @@ form {
 
 .input-holder:hover {
     background: #2f3135;
-    border: 1px solid #5f6368;
+    box-shadow: 0 1px 6px 0 #171717;
+    border-color: rgba(223,225,229,0);
 }
 
 .lupita {
     width: 20px;
-    color: #9aa0a6;
+    margin-left: 5px;
+    margin-top: 3px;
 }
 
 .botones a:link, .botones a:visited {
     display: inline-block;
     width: 24px;
     height: 24px;
+}
+
+.botones {
+    margin-top: 5px;
+    margin-right: 5px;
 }
 
 .botones img {
@@ -172,14 +237,20 @@ form {
     width: 100%;
 }
 
+.space {
+    display: inline;
+    margin: 7px;
+}
+
 
 /****************************************BOTONES***************************************/
 
 .button-container {
     height: 70px;
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    padding-top: 18px;
+    padding-top: 5px;
 }
 
 .btn {
@@ -200,11 +271,9 @@ form {
 }
 
 .btn:hover {
-    border: 1px solid whitesmoke;
-}
-
-.link-español-latinoamerica {
-    color: #8ab4f8;
+    box-shadow: 0 1px 3px rgb(23 23 23 / 24%);
+    border: 1px solid #5f6368;
+    color: #e8eaed;
 }
 
 /***************************************FOOTER*********************************************/
@@ -229,26 +298,39 @@ footer {
 .down {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .menuFooter {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    list-style: none;
 }
 
-.one {
+.one, .two {
     display: flex;
+    list-style: none;
     flex-wrap: wrap;
 }
+
+
 
 .footer-anchor {
     color: #999da2;
     display: block;
     padding: 0px 15px 0px 10px;
     white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .menuFooter {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .two {
+        margin-top: 20px;
+    }
 }
 
 /*****************************DISPLAY HISTORIAL LIST **************************/

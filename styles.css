@@ -15,6 +15,10 @@ body, input, button {
     background: #202124;
 }
 
+.centered {
+    text-align: center;
+}
+
 /*****************************************HEADER**************************************/
 
 header {
@@ -96,108 +100,78 @@ a:active {
 
 /**************************************INPUT************************************/
 
-input {
-    outline: none;
-    padding: 1px;
-    position: relative;
-    margin-left: 24px;
+form {
+    text-align: center;
 }
 
-.glass-space {
-    width: 20px;
-    height: 20px;
-}
-
-.micro-container {
-    position: absolute;
-    top: 10%;
-    right: 25%;
-}
-
-.micro-icon {
-    height: 24px;
-    width: 24px;
-    cursor: pointer;
-}
-
-.glass-container {
-    position: absolute;
-    top: 5%;
-    left: 10%;
-}
-
-.glass-icon {
-    margin-top: 3px;
-    color: #9aa0a6; 
-    height: 24px;
-    width: 24px;
-}
-
-.camera-container {
-    position: absolute;
-    top: 10%;
-    right: 10%;
-}
-
-.camera-icon {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-}
-
-.input-container {
+.input-holder {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 auto;
-    padding-top: 6px;
-    width: auto;
-    max-width: 584px;
-    position: relative;
-}
-
-.input-container button {
-    flex-direction: row;
-}
-
-.finder {
-    display: flex;
-    padding: 5px 8px 0 14px;
+    z-index: 3;
+    height: 24px;
     background: #202124;
-    height: 34px;
-    background-color: transparent;
-    border-radius: 24px;
     border: 1px solid #5f6368;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
     width: 638px;
     max-width: 584px;
-    margin: 0;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px;
+    position: relative;
 }
 
-.finder:link {
-    background-color: #303134;
+.historial {
+    position: absolute;
+    top: 26px;
+    background-color: #2f3135;
+    border-radius: 0 0 24px 24px;
+    width: 100%;
+    left: -1px;
+    height: 200px;
+    border: 1px solid #5f6368;
+    border-top: none;
+    z-index: -1;
+}
+
+.historial-closed {
+    display: none;
+}
+
+.input-holder:hover {
+    background: #2f3135;
+    border: 1px solid #5f6368;
+}
+
+.lupita {
+    width: 20px;
+    color: #9aa0a6;
+}
+
+.botones a:link, .botones a:visited {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.botones img {
+    width: 24px;
+    height: 24px;
+}
+
+.input {
+    flex: 1;
+}
+
+.input input {
+    background-color: transparent;
     border: none;
-    box-shadow: 0 1px 6px 0 #171717;
-    border-color: rgba(223,225,229,0);
+    outline: none;
+    color: #9aa0a6;
+    font-size: 16px;
+    width: 100%;
 }
 
-.finder:visited {
-    background-color: #303134;
-    box-shadow: 0 1px 6px 0 #171717;
-    border-color: rgba(223,225,229,0);
-}
-
-.finder:hover {
-    background-color: #303134;
-    box-shadow: 0 1px 6px 0 #171717;
-    border-color: rgba(223,225,229,0);
-}
-
-.finder:active {
-    background-color: #303134;
-    box-shadow: 0 1px 6px 0 #171717;
-    border-color: rgba(223,225,229,0);
-}
 
 /****************************************BOTONES***************************************/
 

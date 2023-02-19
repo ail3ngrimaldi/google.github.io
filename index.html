@@ -6,55 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image">
     <link type="text/css" rel="stylesheet" href="./styles/styles.css">
-    <link rel="icon" href="./assets/g.png" type="image/png">
+    <link rel="" href="./assets/g.png" type="image/png">
     <title>Google</title>
 </head>
 <body>
+    <div class="container">
         <header>
-                <nav>
-                    <ul class="content">
-                        <li class="item"><a class="navbar-anchor" href="#">Gmail</a></li>
-                        <li class="item"><a class="navbar-anchor" href="#">Imágenes</a></li>
-                        <li class="item icon">
-                            <svg fill="#ffffffde" class="menu" id="btn-milka" focusable="false" viewBox="0 0 24 24">
+                <nav class="content">
+                        <span class="navbar-anchors-container">
+                            <a class="navbar-anchor gmail" href="#">Gmail</a>
+                            <a class="navbar-anchor imagenes" href="#">Imágenes</a>
+                        </span>
+                        <a title="Google Apps" class="navbar-anchor-googleapps">
+                            <svg aria-label="Google Apps" fill="#ffffffde" class="icon-chocolate" id="btn-milka" focusable="false" aria-label="Google Apps" viewBox="0 0 23 23">
                                 <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
-                            </svg></li>
-                        <li class="item avatar"><a href="#">
-                            <img class="avatar" src="./assets/unnamed.png" alt="avatar" />
-                        </a></li>
-                    </ul>
+                            </svg>
+                        </a>
+                            <a href="#" class="navbar-anchor-avatar" aria-label="Cuenta de Google" title="Cuenta de Google" srcset="https://accounts.google.com/SignOutOptions?continue=https://www.google.com/">
+                                <img class="avatar" src="./assets/avatar.png" alt="avatar" />
+                            </a>
                 </nav>
                 <div class="milka" id="milka">
-                    <div class="grid-menu">
-                        <a href="#" class="grid-item"><img class="avatar-grid gridhover" src="./assets/unnamed.png" alt="avatar" /></a>
-                        <p>Cuenta</p>
-                        <a href="#" class="grid-item"><img class="google-grid gridhover" src="./assets/search.png" alt="busqueda" /></a>
-                        <p>Búsqueda</p>
-                        <a href="#" class="grid-item"><img class="google-grid gridhover" src="./assets/google-maps.png" alt="busqueda" /></a>
-                        <p>Maps</p>
-                        <a href="#"><img class="google-grid gridhover" src="./assets/youtube.png" alt="busqueda" /></a>
-                        <p>Youtube</p>
-                        <a href="#"><img class="google-grid gridhover" src="./assets/google-maps.png" alt="busqueda" /></a>
-                        <p>Maps</p>
-                        <a href="#"><img class="google-grid gridhover" src="./assets/google-maps.png" alt="busqueda" /></a>
-                        <p>Maps</p>
-
-                    </div>
+                    <ul class="grid-menu">
+                        <li>Cuenta</li>
+                        <li>Búsqueda</li>
+                        <li>Maps</li>
+                        <li>Youtube</li>
+                        <li>Play</li>
+                        <li>Noticias</li>
+                        <li>Gmail</li>
+                        <li>Meet</li>
+                        <li>Drive</li>
+                        <li>Calendario</li>
+                        <li>Traductor</li>
+                        <li>Fotos</li>
+                        <li>Shopping</li>
+                    </ul>
                 </div>
         </header>
         <section>
             <div class="mainSectionContainer">
-                <img class="google" alt="Google" height="92" src="./assets/g2.png"  width="272" data-iml="1676147209063" data-atf="1" data-frt="0">
+                <img alt="Google" height="92" src="./assets/google.png"  width="272" data-iml="1676147209063" data-atf="1" data-frt="0">
             <form>
                 <div class="input-holder" id="input">
-                    <div class="lupita">
-                        <svg fill="#9aa0a6" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-                        </svg>
+                    <div class="input-holder2">
+                    <div class="lupita-container">
+                        <div class="lupita">
+                            <svg fill="#9aa0a6" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                            </svg>
+                        </div>
                     </div>
-                    <div class="input">
-                        <input type="text" name="q" value="" />
+                    <div class="input1">
+                        <div class="input2">
+                            <input class="input-de-verdad" jsaction="paste:puy29d;" maxlength="2048" name="q" type="text" aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="" role="combobox" spellcheck="false" title="Buscar" value="" aria-label="Buscar" data-ved="0ahUKEwin0ejkzZ39AhWRrpUCHUjYA7cQ39UDCAQ">
+                        </div>
                     </div>
+                </div>
                     <div class="botones">
                         <a href="#">
                         <svg class="micro" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -94,21 +102,22 @@
         </div>
         </section>
         <footer class="footer">
-            <span class="up">Argentina</span>
-            <span class="down">
-                <ul class="one">
+            <span class="footer-one">Argentina</span>
+            <span class="footer-two">
+                <ul class="footer-left">
                     <li><a class="footer-anchor" href="https://about.google/?utm_source=google-AR&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre Google</a></li>
                     <li><a class="footer-anchor" href="">Publicidad</a></li>
                     <li><a class="footer-anchor" href="https://smallbusiness.withgoogle.com/intl/es-419_ar/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=AR#!/">Negocios</a></li>
                     <li><a class="footer-anchor" href="https://www.google.com/search/howsearchworks/?fg=1">Cómo funciona la búsqueda</a></li>
                 </ul>
-                <ul class="two">
+                <ul class="footer-right">
                     <li><a class="footer-anchor" href="https://policies.google.com/privacy?hl=es-AR&fg=1">Privacidad</a></li>
                     <li><a class="footer-anchor" href="https://policies.google.com/terms?hl=es-AR&fg=1">Condiciones</a></li>
                     <li><a class="footer-anchor" href="">Preferencias</a></li>
                 </ul>
             </span>
         </footer>
+    </div>
 </body>
 <script>
     // var input = document.getElementsByClassName("finder");
